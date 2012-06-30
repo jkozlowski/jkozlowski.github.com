@@ -1,0 +1,44 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in, top=1in, left=1in, right=1in}
+\setlength\parindent{0in}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text}
+\setmonofont[Scale=0.8]{Monaco} 
+\setsansfont[Scale=0.9]{Optima Regular}
+\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}}
+\usepackage{marginnote}
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\sffamily\mdseries\Large\underline} 
+\subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
+\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+\pagestyle{empty}
+
+\begin{document}
+
+\textsf{\centering{\Huge Jakub Dominik Koz\l owski}\\[0.2in]}
+
+\begin{minipage}[b]{2in}
+\small{mobile: 07846707813}
+\end{minipage}
+\begin{minipage}[b]{2in}
+\centering{\small{email: mail@jakub-kozlowski.com}}
+\end{minipage}
+\begin{minipage}[b]{2in}
+\begin{flushright}\small{github: github.com/jkozlowski}\end{flushright}
+\end{minipage}
+
+\section*{Skills}
+\emph{Emeritus Professor}, Institute for Advanced Study, Princeton
+
+\end{document}
