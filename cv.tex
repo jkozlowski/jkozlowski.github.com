@@ -25,10 +25,12 @@
 \pagestyle{empty}
 
 \newlength{\wideitemsep}
-\setlength{\wideitemsep}{-1pt}
+\setlength{\wideitemsep}{-2pt}
 %\addtolength{\wideitemsep}{-1pt}
 \let\olditem\item
 \renewcommand{\item}{\setlength{\itemsep}{\wideitemsep}\olditem}
+
+\linespread{0.9}
 
 \begin{document}
 
@@ -40,7 +42,7 @@
 \begin{minipage}[b]{2in}
 \centering{\small{email: mail@jakub-kozlowski.com}}
 \end{minipage}
-\begin{minipage}[b]{2.3in}
+\begin{minipage}[b]{2.5in}
 \begin{flushright}\small{github: github.com/jkozlowski}\end{flushright}
 \end{minipage}
 
