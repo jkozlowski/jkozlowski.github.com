@@ -3,7 +3,7 @@
 
 % DOCUMENT LAYOUT
 \usepackage{geometry} 
-\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in, top=1in, left=1in, right=1in}
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in, top=0.5in, left=0.9in, right=0.9in, bottom=0.5in}
 \setlength\parindent{0in}
 \usepackage{xunicode}
 \usepackage{xltxtra}
@@ -24,9 +24,15 @@
 \subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
 \pagestyle{empty}
 
+\newlength{\wideitemsep}
+\setlength{\wideitemsep}{-1pt}
+%\addtolength{\wideitemsep}{-1pt}
+\let\olditem\item
+\renewcommand{\item}{\setlength{\itemsep}{\wideitemsep}\olditem}
+
 \begin{document}
 
-\textsf{\centering{\Huge Jakub Dominik Koz\l owski}\\[0.2in]}
+\textsf{\centering{\Huge Jakub Dominik Koz\l owski}\\[0.1in]}
 
 \begin{minipage}[b]{2in}
 \small{mobile: 07846707813}
@@ -34,11 +40,49 @@
 \begin{minipage}[b]{2in}
 \centering{\small{email: mail@jakub-kozlowski.com}}
 \end{minipage}
-\begin{minipage}[b]{2in}
+\begin{minipage}[b]{2.3in}
 \begin{flushright}\small{github: github.com/jkozlowski}\end{flushright}
 \end{minipage}
 
 \section*{Skills}
-\emph{Emeritus Professor}, Institute for Advanced Study, Princeton
+\begin{itemize}
+\item \textbf{Java}: 4 years; JEE6 APIs: JPA, JAXB, JAX-WS, EJB – Summer 2010.
+\item \textbf{Hibernate, Glassfish, OSGi, Hadoop}.
+\item \textbf{Test-Driven Development, OOP, Design Patterns.}
+\item \textbf{Open Source Development Tools}: Maven3, Jenkins, TestNG, Git.
+\end{itemize}
+
+\section*{Experience}
+\paragraph{MEng, Final Year Project, Eugene: Agent-Based Market Simulator for use in Validation and System Testing of Trading Algorithms.} 
+\begin{itemize}\item Explores the efficacy of using Agent-Based Simulation for testing of Trading Algorithms that could supplement backtesting on historical data.
+\item Received a distinction - 86\% (Provisional Result).
+\item Awarded second place in \textit{IBM Individual Project Prize 2011/2012}.
+\end{itemize}
+
+\paragraph{March 2012, An Analysis of Distributed Indexing, Group Project, Information Retrieval and Data Mining.}
+\begin{itemize}
+\item An investigation into the viability of distributed indexing on Hadoop using Terrier on a subset of ClueWeb09B corpus (approx. 14GB compressed data).\item Built a Hadoop Cluster using Cloudera.
+\end{itemize}
+
+\paragraph{Summer 2011, Summer Internship, UBS.}
+\begin{itemize}
+\item Implemented a framework for automatic migration of code in legacy components to a new API.\item Mentored a group of Work Experience personnel to help with Automated Testing of Trading Algorithms through simulation.
+\end{itemize}
+
+\paragraph{October 2010 – March 2011, Newton Spectrum Browser, 3rd Year University Group Project.}
+\begin{itemize}
+\item Successfully led a team of 3 developers that delivered a manuscript browser to display and visualize documents stored in TEI format.\item Responsible for planning iterations, designing the overall architecture of the software and implementing crucial modules. 
+\item Achieved very high overall mark (80\%).
+\end{itemize}
+
+\paragraph{Summer 2010 – 15 week Internship, CiteSeeing – citeseeing.com, Ingemar Cox, University College London.}
+\begin{itemize}
+\item As member of a two-programmer team, successfully completed design and implementation of a web service that provides citation information about published academic papers. Ensured team productivity and rapid development by employing JEE6 stack with Glassfishv3.\item Co-Implemented a document fingerprinting algorithm, following Design Patterns. Designed and implemented persistence layer using EJB and JPA APIs with Hibernate provider.\item Designed and implemented RESTful API using JAX-WS and JAXB.
+\end{itemize}
+
+\paragraph{February - March 2010, P Language Compiler, Group Project, Compilers.}
+\begin{itemize}
+\item The implementation won the prize for the best compiler of the year.
+\end{itemize}
 
 \end{document}
