@@ -1,0 +1,12 @@
+{
+  "volo": {
+    "baseUrl": "js/lib",
+    "url": "http://jakub-kozlowski.com",
+    "dependencies": {
+      "jquery": "github:jquery/jquery/1.8.3",
+      "underscore": "github:amdjs/underscore/1.4.3",
+      "modernizr": "github:Modernizr/Modernizr/v2.6.2",
+      "font-awesome": "github:FortAwesome/Font-Awesome/2.0.0"
+    }
+  }
+}
